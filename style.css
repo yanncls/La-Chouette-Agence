@@ -93,6 +93,7 @@ a:hover {
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
+    opacity: 0.1;
 }
 
 .b-parallax {
@@ -100,7 +101,7 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: rgb(0, 0, 0);
 }
 
 .d-bloc button:hover {
@@ -133,7 +134,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgb(149 74 14);
 }
 
 .d-bloc .a-btn:hover,
@@ -281,6 +282,13 @@ a:hover {
 .row.row-no-gutters > [class*=" col-"] {
     padding-right: 0;
     padding-left: 0;
+}
+
+@media (max-width: 400px) {
+    .row.row-no-gutters {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 #bloc-1-hero h1 {
@@ -651,7 +659,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #2c2929!important;
 }
 
 .container {
@@ -677,7 +685,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -736,7 +744,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #000000!important;
 }
 
 .portfolio-thumb {
@@ -753,7 +761,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: #F3976C;
     padding: 40px 40px 40px 40px;
 }
 
@@ -775,11 +783,11 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #000000!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #000000;
     color: #FFFFFF!important;
 }
 
@@ -789,7 +797,7 @@ h4 {
 }
 
 .ltc-white {
-    color: #FFFFFF!important;
+    color: #000000!important;
 }
 
 .ltc-white:hover {
@@ -1039,4 +1047,45 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+
+div .background-header {
+    background-color: #F3976C;
+    padding: 2rem;
+}
+
+.sizing-bot {
+    margin-right: 12%;
+    margin-left: 12%;
+}
+
+ul {
+    list-style-position: inside
+
+}
+
+li {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.footer-center {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links a {
+    margin: 2rem;
+}
+
+a {
+    text-decoration: none;
 }
